@@ -1,7 +1,6 @@
 <?=/*****/@null;/*****/ /**********//*****/?>
 <?php
 error_reporting(0);
-http_response_code(404);
 //\//\ ##
 //\//\ ##
 
