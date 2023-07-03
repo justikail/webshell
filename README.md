@@ -8,11 +8,11 @@
 <img src="https://github-readme-stats.vercel.app/api/pin?username=justikail&repo=webshell&hide_border=false&show_icons=false&border_color=00ff00&bg_color=000000&title_color=39FF14&text_color=FFFFFF&icon_color=2dde98">
 
 ```
-• Bypass Forbidden (403).<br>
-• Bypass Auto Delete.<br>
-• Bypass Mod_Security (406).<br>
-• Bypass MIME TYPE Checking.<br>
-• Auto 0kb file.<br>
-• Blank file.<br>
+• Bypass Forbidden (403).
+• Bypass Auto Delete.
+• Bypass Mod_Security (406).
+• Bypass MIME TYPE Checking.
+• Auto 0kb file.
+• Blank file.
 • And More.
 ```
