@@ -14,5 +14,6 @@
 • Bypass MIME TYPE Checking.
 • Auto 0kb file.
 • Blank file.
+• defeat PHP-GD compression.
 • And More.
 ```
