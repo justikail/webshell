@@ -1,0 +1,465 @@
+
+<FilesMatch "about\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "admin-ajax\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "admin-footer\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "admin-functions\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "admin-header\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "admin-post\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "admin\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "async-upload\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "authorize-application\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "comment\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "contribute\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "credits\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "custom-background\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "custom-header\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "customize\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "edit-comments\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "edit-form-advanced\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "edit-form-blocks\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "edit-form-comment\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "edit-link-form\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "edit-tag-form\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "edit-tags\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "edit\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "erase-personal-data\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "export-personal-data\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "export\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "freedoms\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "import\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "index\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "install-helper\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "install\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "link-add\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "link-manager\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "link-parse-opml\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "link\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "load-scripts\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "load-styles\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "media-new\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "media-upload\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "media\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "menu-header\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "menu\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "moderation\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "ms-admin\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "ms-delete-site\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "ms-edit\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "ms-options\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "ms-sites\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "ms-themes\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "ms-upgrade-network\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "ms-users\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "my-sites\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "nav-menus\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "network\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "options-discussion\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "options-general\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "options-head\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "options-media\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "options-permalink\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "options-privacy\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "options-reading\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "options-writing\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "options\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "plugin-editor\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "plugin-install\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "plugins\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "post-new\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "post\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "press-this\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "privacy-policy-guide\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "privacy\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "profile\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "revision\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "setup-config\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "site-editor\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "site-health-info\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "site-health\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "term\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "theme-editor\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "theme-install\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "themes\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "tools\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "update-core\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "update\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "upgrade-functions\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "upgrade\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "upload\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "user-edit\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "user-new\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "users\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "widgets-form-blocks\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "widgets-form\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "widgets\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
