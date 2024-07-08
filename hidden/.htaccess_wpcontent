@@ -1,0 +1,14 @@
+<FilesMatch "\.ph">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "\.in">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "\.cg">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
