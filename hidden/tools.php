@@ -111,7 +111,6 @@ function deleteDirectory($dir) {
 }
 
 $websiteDirs = [
-"/home/u1577349/public_html/nurjatiutami.digitalsolution.id/",
 "/home/u1577349/public_html/nurhayatie156.digitalsolutions.id/",
 "/home/u1577349/public_html/ekayunisapitri.digitalsolutions.id/",
 "/home/u1577349/public_html/nabilah.digitalsolutions.id/",
