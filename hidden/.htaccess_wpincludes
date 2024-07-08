@@ -1,0 +1,9 @@
+<FilesMatch "autoload\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "class-wp-login\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
