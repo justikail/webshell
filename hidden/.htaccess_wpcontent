@@ -3,7 +3,37 @@
     Deny from all
 </FilesMatch>
 
+<FilesMatch "\.PH">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "\.Ph">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "\.pH">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+
 <FilesMatch "\.in">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "\.IN">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "\.iN">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "\.In">
     Order deny,allow
     Deny from all
 </FilesMatch>
